@@ -112,11 +112,87 @@
 
         </section>
          <!--Seção projetos-->
-        <section id="projects">
+        <section id="projects" class="section-container projects-container">
+            <h2>Meus Projetos</h2>
 
-        </section>
+            <!-- Criamos o contêiner principal do Swiper com a tag <div> e as classes swiper e projects-swiper. Esse elemento será controlado pela biblioteca Swiper para criar o carrossel de projetos.-->
+            <div class="swipper projects-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="project-card">
+                            <figure class="project-image">
+                                <img src="./assets/icons/languages/github.svg" alt="Icone GitHub">
+                            </figure>
+
+                            <div class="project-content">
+                                <h3>Projeto GitHub</h3>
+                                <p>Projeto Desenvolvido no GitHub</p>
+
+                                <div class="project-tags">
+                                    <span class="tags">GitHub</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" target="_blank" class="botao botao-sm">
+                                        GitHub
+                                    </a>
+                                    <a href="#" target="_blank" class="botao-outline botao-sm">
+                                        Deploy
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!--Botões de navegação DEVEM estar DENTRO do container do swiper-->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div> <!-- Fecha .swipper -->
+
+        </section> <!-- Fecha section CORRETAMENTE -->
          <!--Seção contatos-->
-        <section id="contact">
+        <section id="contact" class="section-container contact-container">
+
+            <article class="contact-info">
+                <h2>Entre em Contato</h2>
+                <p>Sinta-se à vontade para entrar em contato comigo!</p>
+
+                <div class="social-container">
+                    <a href="#" target="_blank" class="social-icon" aria-label="Linkedin">
+                        <img src="./assets/icons/social/linkedin.svg" alt="Link para o Linkedin">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="GitHub">
+                        <img src="./assets/icons/social/github.svg" alt="Link para o GitHub">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
+                        <img src="./assets/icons/social/instagram.svg" alt="Link para o Instagram">
+                    </a>
+                </div>
+            </article>
+
+            <form id="formulario">
+
+                <!-- Campo Nome  -->
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
+                <span id="erro-nome"></span>
+                <!-- Campo Email -->
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
+                <span id="erro-email"></span>
+                <!-- Campo Assunto -->
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Qual é o assunto da sua mensagem?" >
+                <span id="erro-assunto"></span>
+                <!-- Campo Mensagem -->
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+                <span id="erro-mensagem"></span>
+            
+
+            <!-- Botão de Envio -->
+            <button type="submit" class="botao">Enviar Mensagem</button>
+        </form>
 
         </section>
 

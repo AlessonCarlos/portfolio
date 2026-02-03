@@ -464,3 +464,40 @@ header a:hover{
             brightness(79%)
             contrast(91%)
 }
+
+/*Estilização da Página index - Seção Contact*/
+/*Estilizar a Seção Formulário*/
+
+/*Seção Form*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/*Seção Form - Input e Text Area*/
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem var(--spacing-sm);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: var(--text-base);
+    transition: border-color 0.3 ease;
+}
+form input:focus,
+form textarea:focus {
+    border-color: var(--purple-500);
+    outline: none;
+}
+
+/*Seção Form - Text Area e Span*/
+form textarea {
+    min-height: 5rem;
+    resize: none;
+}
+form span {
+    margin-top: -0.75rem;
+    font-size: var(--text-sm);
+    color: var(--error);
+}

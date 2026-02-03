@@ -416,3 +416,51 @@ header a:hover{
     border-radius: var(--radius-sm);
     background-color: var(--purple-500);
  }
+
+ /*Estilização da Página index - Seção Contact: Redes Sociais*/
+
+ /*Seção Contact (Container)*/
+ .contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+ }
+
+ /*Informações de contato (texto)*/
+ .contact-info h2 {
+    margin-bottom: var(--spacing-md);
+ }
+
+ .contact-info p {
+    margin-bottom: var(--spacing-lg);
+ }
+
+ /*Redes Sociais(container)*/
+.social-container{
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+}
+
+/*Redes Sociais - Ícones*/
+.social-icon{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    transition: var(--transition-default);
+}
+.social-icon img {
+    width: 100%;
+    filter: brightness(0) saturate(100%);
+}
+.social-icon:hover img {
+    filter: brightness(0)
+            saturate(100%)
+            invert(42%)
+            sepia(93%)
+            saturate(1352%)
+            hue-rotate(243deg)
+            brightness(79%)
+            contrast(91%)
+}

@@ -1,10 +1,87 @@
+/* RESET GLOBAL - Estilos base para todos os elementos
+   -------------------------------------------------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    outline: none;
+    margin: 0;           /* Remove margens padrão do navegador */
+    padding: 0;          /* Remove paddings padrão do navegador */
+    box-sizing: border-box; /* Padding e border contam no width/height */
+    font-family: 'poppins', sans-serif; /* Fonte padrão do projeto */
+    font-weight: 400;    /* Peso da fonte normal */
+    text-decoration: none; /* Remove sublinhado de links */
+    outline: none;       /* Remove contorno de foco padrão */
+}
 
+:root {
+
+     /*Paletas de cores purple*/   
+    --purple-50: #f4eaff;
+    --purple-100: #e9dcfa;
+    --purple-200: #cdb3f0;
+    --purple-300: #b186e5;
+    --purple-400: #9460db;
+    --purple-500: #6b36c8;
+    --purple-600: #5b2ca0;
+    --purple-700: #4c2177;
+    --purple-800: #441f88;
+    --purple-900: #2a0e4d;
+
+    /*Cores neutras*/
+    --gray-200: #e8e8e8;
+    --gray-400: #505861;
+    --black: #171717;
+    --white: #FAF7FF;
+
+    /*Cores de Estado*/
+    --error: #e63946;
+
+    /*Sombas*/
+    --shadow-sm: 0 0.25rem 0.5rem rgba(0,0,0, 0.05);
+    --shadow-sm: 0 0.25rem 0.75rem rgba(107,54,200, 0.03);
+    --shadow-sm: 0 0.5rem 1.5rem rgba(107,54,200, 0.02);
+
+    /*Espaçamentos*/
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+
+    /* tamanho de fonte */
+    --text-sm: 0.75rem;
+    --text-base: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+    --text-2xl: 2rem;
+    --text-3xl: 2.5rem;
+
+    /*Border Radius*/
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 2rem;
+    --radius-full: 50%;
+
+    /*Animação padrão*/
+    --transition-default: all 0.3s ease;
+    
+}
+
+/* Rola a página suavemente quando clica em links internos (#section) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Configura a estrutura básica da página */
+body {
+    display: flex;                 /* Usa flexbox para layout */
+    flex-direction: column;       /* Empilha elementos verticalmente */
+    min-height: 100vh;            /* Ocupa no mínimo toda a altura da tela */
+    background-color: var(--white); /* Cor de fundo branca */
+    line-height: 1.6;             /* Espaçamento entre linhas confortável */
+    color: var(--black);          /* Cor do texto preta */
+}
+
+/* Faz o conteúdo principal crescer e ocupar espaço disponível */
+main {
+    flex: 1;  /* Empurra o footer para baixo quando tem pouco conteúdo */
 }

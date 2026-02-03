@@ -1,3 +1,5 @@
+/*ESTILO GLOBAIS - PARTE 01*/   
+
 /* RESET GLOBAL - Estilos base para todos os elementos
    -------------------------------------------------- */
 * {
@@ -35,8 +37,8 @@
 
     /*Sombas*/
     --shadow-sm: 0 0.25rem 0.5rem rgba(0,0,0, 0.05);
-    --shadow-sm: 0 0.25rem 0.75rem rgba(107,54,200, 0.03);
-    --shadow-sm: 0 0.5rem 1.5rem rgba(107,54,200, 0.02);
+    --shadow-md: 0 0.25rem 0.75rem rgba(107,54,200, 0.03);
+    --shadow-lg: 0 0.5rem 1.5rem rgba(107,54,200, 0.02);
 
     /*Espaçamentos*/
     --spacing-xs: 0.5rem;
@@ -85,3 +87,70 @@ body {
 main {
     flex: 1;  /* Empurra o footer para baixo quando tem pouco conteúdo */
 }
+
+/* ESTILO GLOBAIS - PARTE 02*/
+
+.section-container{
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+    scroll-margin-top: 6rem;
+}
+
+.buttons-container {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+/*Container de botões e Configuração básica do botão*/
+.botao,
+.botao-outline {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 0.15rem solid transparent;
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-default);
+}
+
+/*Botão preenchido (primario)*/
+.botao {
+    border-color: var(--purple-500);
+    background-color: var(--purple-500);
+    color: var(--white);
+}
+
+.botao:hover {
+    border-color: var(--purple-800);
+    background-color: var(--purple-800);
+    box-shadow: var(--shadow-md);
+    transform: translate(-0.25rem);
+}
+
+/*Botão outline (secundário)*/
+.botao-outline {
+    border-color: var(--purple-500);
+    background-color: transparent;
+    color: var(--purble-500);
+}
+.botao-outline:hover {
+    border-color: var(--purple-500);
+    background-color: var(--purple-500);
+    color: var(--white);
+    transform: translateY(-0.25rem);
+}
+
+/*Modificador para botões pequenos (usado em projetos)*/
+.botao.botao-sm,
+.botao-outline.botao-sm {
+    min-width: 6rem;
+    padding: 0.25rem var(--spacing-sm);
+    border-width: 0.125rem;
+    border-radius: 0.25rem;
+    font-size: var(--text-sm);
+}
+
+

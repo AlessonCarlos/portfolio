@@ -701,7 +701,7 @@ footer{
     white-space: nowrap;
     }
     
-}
+
 
     /*SEÇÃO ABOUT*/
    
@@ -808,6 +808,7 @@ footer{
     min-height: calc(100vh - 10rem);
     }
 
+}
     .success-content {
     gap: var(--spacing-lg);
     max-width: 35rem;
@@ -868,7 +869,7 @@ footer{
         display: none;
     }
 
-    }
+    
 
     /*HERO*/
     .hero-container {
@@ -1039,6 +1040,6 @@ footer{
         max-width: 20rem;
         padding: 0.75rem var(--spacing-lg);
     }
-
+    }
 
 

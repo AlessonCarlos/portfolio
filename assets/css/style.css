@@ -448,9 +448,9 @@ header a:hover{
  }
 
  .swiper-button-next:after,
- .swipper-button-prev::after {
+ .swiper-button-prev::after {
     font-size: var(--text-lg);
-    color: var(--purble-500);
+    color: var(--purple-500);
  }
 
  .swiper-button-next:hover:after,
